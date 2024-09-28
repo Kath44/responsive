@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NoteIt</title>
+    <link rel="stylesheet" href="reg.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="home">
+        <h1 class="yep">Note<span>It!</span></h1>
+
+        <nav>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="" class="active">REGISTER</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mid-con">
+        <div class="mid-logo"></div>
+        <div class="container">
+          <h1>Register<span>Here!</span></h1>
+
+          <div class="form-grid">
+          <form>
+            <label for="fname">Full Name</label>
+            <input type="text" placeholder="Full Name" />
+
+            <label for="uname">Username</label>
+            <input type="text" placeholder="User Name" />
+
+            <label for="bdate">Date of Birth</label>
+            <input type="date" id="date" name="bdate" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email" />
+
+            <label for="home">Home Address</label>
+                <textarea id="home-address" name="home" placeholder="Home Address" required></textarea>
+
+            <label for="current-address">Current Address</label>
+            <textarea id="current-address" name="current-address" placeholder="Current Address" required></textarea>
+
+            <div class="column">
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div class="gender-selection">
+                  <label><input type="radio" name="gender" value="male" /> Male</label>
+                  <label><input type="radio" name="gender" value="female" /> Female</label>
+                </div>
+              </div>
+            
+              <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+              </div>
+            </div>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" />
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="Confirm password" />
+
+            <button type="submit">Register</button>
+          </form>
+          
+
+          <p class="login-link">
+            Already have an account? <a href="signin.html">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
